@@ -8,8 +8,19 @@
     "powhttp": "dist/bin/powhttp-cli.js"
   },
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossvc/powhttp-cli.git"
+  },
+  "homepage": "https://github.com/rossvc/powhttp-cli#readme",
+  "bugs": {
+    "url": "https://github.com/rossvc/powhttp-cli/issues"
+  },
+  "author": "rossvc",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prepare": "npm run build",
@@ -24,7 +35,9 @@
     "proxy",
     "debugging",
     "cli",
-    "network"
+    "network",
+    "traffic",
+    "inspector"
   ],
   "license": "MIT",
   "dependencies": {
