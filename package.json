@@ -1,0 +1,39 @@
+{
+  "name": "powhttp-cli",
+  "version": "0.1.0",
+  "description": "Context-efficient CLI for the powhttp Data API",
+  "type": "module",
+  "main": "dist/bin/powhttp-cli.js",
+  "bin": {
+    "powhttp": "dist/bin/powhttp-cli.js"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "dev": "tsx bin/powhttp-cli.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "powhttp",
+    "http",
+    "proxy",
+    "debugging",
+    "cli",
+    "network"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "json5": "^2.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
